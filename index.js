@@ -8,9 +8,9 @@ var botao = document.querySelector('#botao')
 
 
 escolha.addEventListener("change", function (e) {        
-    var metodoSelecionado = e.target.value;
+    var metodoEscolhido = e.target.value;
   
-    if (metodoSelecionado == "base64") {
+    if (metodoEscolhido == "base64") {
         invisivel.style.display = "none";
         botao.setAttribute("onclick", "base64()") 
     } else {
