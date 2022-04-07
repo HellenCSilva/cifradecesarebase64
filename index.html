@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title> Codificador e Decodificador </title>
+</head>
+
+<body>
+
+    <form class="pai">
+        <h1 class="titulo">🔒 Codifique ou decodifique uma mensagem 🔓</h1>
+        <section class="selecaodousuario">
+            <select name="selecione" id="alternativa">
+                <option value="metodo" disabled selected><strong>Selecione a opção</strong></option>
+                <option value="caesar">Cifra de César</option>
+                <option value="base64">Base 64</option>
+            </select>
+
+
+            <input id="invisivel" type="number"
+                placeholder="Digite a chave em número">
+
+
+            <div class="coddec">
+                <input checked type="radio" id="codificar" name="escolhaDeMetodo" value="codificar">
+                <label for="escolhaDeMetodo"><strong>Codificar</strong></label>
+            </div>
+            
+            <div class="coddec">
+                <input type="radio" id="decodificar" name="escolhaDeMetodo">
+                <label for="escolhaDeMetodo"><strong>Decodificar</strong></label>
+            </div>
+        </section>
+
+        <section class="escrita">
+            <textarea class="texto" id="escrever" name="texto-usuario" placeholder="Digite aqui sua mensagem" rows="10"
+                cols="33"></textarea>
+            <textarea class="texto" id="resultado" name="texto-usuario" placeholder= "Resultado" rows="10" cols="33" readonly></textarea>
+        </section>
+
+        <button type="button" id="botao"><strong>Codificar</strong></button>
+
+    </form>
+
+    <footer>
+
+        <div>
+            <p class="fimdepage"><a href="https://www.linkedin.com/in/costahellen/"><strong><small>Hellen Costa</small></strong></a> <small>©Copyright 2022</small></p>
+        </div>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
